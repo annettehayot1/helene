@@ -43,8 +43,8 @@ body {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    
 }
+
 
 .nav-links a {
     display: block;
@@ -66,6 +66,9 @@ body {
 .nav-toggler {
     display: none;
 }
+.nav-accueil {
+    display: none;
+}
 .logo {
     padding: 1.5rem;
     position: fixed;
@@ -77,6 +80,7 @@ body {
     backdrop-filter: blur(6px);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
+
 .logo img {
     height: 6.25rem;
     transition: transform 0.3s ease;
@@ -85,6 +89,25 @@ body {
 .logo img:hover {
     transform: scale(1.05);
 }
+.choisir-alma {
+    position: fixed;
+    top: 13rem;
+    left: 1rem;
+    visibility: hidden;
+    opacity:0;
+    z-index: 300;
+    background: rgba(255,255,255,1);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+.choisir-alma h3 {
+    margin-bottom: 1rem;
+}
+.active-logo {
+    visibility: visible;
+    opacity:1;
+}
+
 .logo-sens-demain {
     padding: 1.5rem;
     position: fixed;
@@ -140,8 +163,12 @@ body {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1.5rem;
-
 }
+.long-title span{
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+} 
 .section-subtitle {
     font-family: "MuseoModerno", sans-serif;
     padding: 0 0.5rem;
@@ -216,7 +243,7 @@ body {
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(6px);
     border-radius: 10px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 .titre-alma-3-en-1, .titre-temoignages {
     font-family: "MuseoModerno", sans-serif;
@@ -360,12 +387,34 @@ body {
     margin-top: 1rem;
     margin-bottom: 0.2rem;
 }
-
-/* section Contact */
+/* section Qualiopi */
 .certification iframe {
     display: block;
     margin: 0 auto;
 }
+.certification h3 {
+    margin-bottom: 1rem;
+}
+.certification ul {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.qualiopi-button {
+    font-family: "MuseoModerno";
+    display: block;
+    min-width: 15rem;
+    margin: 0 auto;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    border-color: #5d94d4;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.qualiopi-button a{
+    text-decoration: none;
+}
+/* section Contact */
 .formulaire-contact {
     max-width: 800px;
     padding: 1rem;
@@ -463,6 +512,9 @@ footer {
             width:70%;
             margin-right: 4%;
             }
+        .long-title span {
+        font-size: 1.7rem;
+        } 
         .logo-contact {
             top: 13rem;
             left: 1.5rem;
@@ -512,6 +564,9 @@ footer {
       .section {
             margin-right: 0;
         }
+      .long-title span {
+        font-size: 1.6rem;
+        } 
       .navigation {
             padding: 0.3rem 
         }
@@ -524,6 +579,11 @@ footer {
         }
       .logo {
             left: 2.5rem;
+        }
+      .choisir-alma {
+            top: 13rem;
+            left: 1rem;
+            border-radius: 10px;
         }
       .logo img {
             height: 5rem;
@@ -578,7 +638,8 @@ footer {
             flex-direction: column;
             align-items: start;
             background: var(--orange);
-            border-radius: 0.5rem;;
+            border-radius: 0.5rem;
+            padding-top: 1rem;
             }
         .nav-links a{
             margin-bottom: 1rem;
@@ -617,41 +678,46 @@ footer {
             margin-bottom: 1rem;
             padding-top: 2rem;
             }
-        .long-title {
-            font-size: 2rem;
-            margin-bottom: 0;
-            }
-      .logo {
+        .long-title span{
+            font-size: 1.5rem;
+        } 
+        .logo {
             left: auto;
             right: 1rem;
             }
-      .logo-contact {
+        .choisir-alma {
+            top: 12rem;
+            right: 1rem;
+            left: auto;
+            border-radius: 10px;
+            }              
+        .logo-contact {
             top: 12.5rem;
             left: auto;
             right: 1rem;
             width: 13rem;
             }
-      .logo-contact :last-child {
+        .logo-contact :last-child {
             font-size: 0.9rem;
             }
-      .logo-qualiopi {
-            top: 28rem;
+        .logo-qualiopi {
+                top: 28rem;
             left: auto;
             right: 2rem;
             }
-      .reglement{
+        .reglement{
             top: 38rem;
             left: auto;
             right:1.5rem;
             }
-      .contexte-reglementaire {
+        .contexte-reglementaire {
             width: 66.5%;
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(calc(-50% - 22%), -50%);
             }
-      .logo-sens-demain {
+        .logo-sens-demain {
             top: 18.5rem;
             left: auto;
             right: 3rem;
@@ -725,6 +791,12 @@ footer {
             align-items: center;
             height: 100vh
             }
+        .navigation {
+            z-index: 400;
+        }
+        .nav-accueil {
+            display: block;
+        }
         .titre-header {
             display: flex;
             justify-content: center;
@@ -740,6 +812,11 @@ footer {
         .logo img {
             height: 7rem;
             }
+        .choisir-alma {
+            top: 16.5rem;
+            left: auto;
+            right: auto;
+            }
         .logo-contact {
             width: 16.5rem;
             }
@@ -749,39 +826,39 @@ footer {
         .section {
             width: 100%;
             }
-    .bloc-reglement {
-        position: relative;
-        text-align: center;
-        margin: 1.5rem auto 0;
-        width: fit-content;
-        }
-    .reglement {
-        position: static;
-        margin-top: 1rem;
-        cursor: pointer;
-        }
-    .contexte-reglementaire {
-        position: absolute;
-        top: calc(100% + 0.75rem); 
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90vw;
-        max-width: 30rem;
-        height: auto;
-        padding: 1.2rem;
-        border-radius: 10px;
-        background: #f1f1f1;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease;
-        z-index: 300;
-        }
-    .bloc-reglement:hover .contexte-reglementaire {
-        opacity: 1;
-        visibility: visible;
-        }
-    .div-formations {
-        margin-top: 2rem;
-        }
+        .bloc-reglement {
+            position: relative;
+            text-align: center;
+            margin: 1.5rem auto 0;
+            width: fit-content;
+            }
+        .reglement {
+            position: static;
+            margin-top: 1rem;
+            cursor: pointer;
+            }
+        .contexte-reglementaire {
+            position: absolute;
+            top: calc(100% + 0.75rem); 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90vw;
+            max-width: 30rem;
+            height: auto;
+            padding: 1.2rem;
+            border-radius: 10px;
+            background: #f1f1f1;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            z-index: 300;
+            }
+        .bloc-reglement:hover .contexte-reglementaire {
+            opacity: 1;
+            visibility: visible;
+            }
+        .div-formations {
+            margin-top: 2rem;
+            }
 }

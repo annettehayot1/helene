@@ -55,7 +55,6 @@ const navLinksLI = document.querySelectorAll(".nav-links li")
 navToggler.addEventListener("click", toggleNav)
 
 function toggleNav(){
-    console.log("coucou") 
   navLinks.classList.toggle("active");
 
   const expanded = navToggler.getAttribute("aria-expanded") === "true";
@@ -72,6 +71,14 @@ navLinksLI.forEach( li => {
     li.addEventListener("click", fermerMenu)
 })
 function fermerMenu() {
+    choisirAlma.classList.remove("active-logo")
     navLinks.classList.remove("active")
     togglerImg.src = "ressources/hamburger.svg"
     }
+const almaLogo = document.querySelector(".logo")
+const choisirAlma = document.querySelector(".choisir-alma")    
+almaLogo.addEventListener("click", handleAlmaClick)
+
+function handleAlmaClick() {
+    choisirAlma.classList.toggle("active-logo")
+}
