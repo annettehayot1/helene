@@ -37,7 +37,6 @@ document.querySelectorAll("[class*='formation-btn-']").forEach(btn => {
 
 function showFormation(e) {
     const classe = e.currentTarget.className
-    console.log(classe)
     if(classe.includes("formation-btn-1")) {
         window.open("./ressources/prog-B12CR-2025.pdf", "_blank")
     } else if(classe.includes("formation-btn-2")) {
@@ -45,6 +44,19 @@ function showFormation(e) {
     } else if (classe.includes("formation-btn-3")){
         window.open("./ressources/prog-RB12CR-2025.pdf", "_blank") 
     }
+}
+
+const pourQui = document.querySelector(".pour-qui")
+pourQui.addEventListener("click", handlePourQuiClick)
+
+function handlePourQuiClick() {
+    window.open("./ressources/pourqui.pdf","_blank")
+}
+const certificatQualiopi = document.querySelector(".certificat")
+certificatQualiopi.addEventListener("click", handleCertifcatClick)
+
+function handleCertifcatClick() {
+    window.open("./ressources/certificate_Qualiopi_2025.pdf","_blank")
 }
 
 const navToggler = document.querySelector(".nav-toggler");
@@ -81,4 +93,12 @@ almaLogo.addEventListener("click", handleAlmaClick)
 
 function handleAlmaClick() {
     choisirAlma.classList.toggle("active-logo")
+}
+const reglement = document.querySelector(".reglement")
+const contexteReglementaire = document.querySelector(".contexte-reglementaire")
+
+reglement.addEventListener("click", handleReglementClick)
+
+function handleReglementClick(){
+    contexteReglementaire.classList.toggle("active-reglement")
 }

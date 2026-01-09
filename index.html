@@ -8,47 +8,17 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="header-mobile" id="accueil-mobile">
-      <button class="logo">
-        <img src="ressources/logo.png" alt="Logo ALMA Formation" />
-      </button>
-      <div class="choisir-alma">
-        <h3>Pourquoi choisir ALMA ?</h3>
-        <ul class="liste-choisir-alma">
-          <li>Organisme certifié Qualiopi</li>
-          <li>Pédagogie pratique et opérationnelle</li>  
-          <li>Expertise des formateurs expérimentés</li>  
-          <li>Formateurs expérimentés</li>  
-          <li>Supports conformes NFC 18-510</li>  
-          <li>Matériel et mises en situation réels</li>  
-          <li>Sessions rapides et efficaces</li>  
-          <li>Accompagnement OPCO</li>  
-          <li>100 % de nos apprenants évalués <span>(compatible Qualiopi)</span></li>  
-        </ul>
-      </div>
+  <header id="accueil">
 
-      <div class="logo-contact">
-        <p>Hélène ZACHARIS</p>
-        <p>+33(0)6 82 48 45 07</p>
-        <p>contact@alma-formation.com</p>
-      </div>
-      <h1 class="titre-header">Habilitation électrique<br> NFC 18-510</h1>
-      <div class="logo-qualiopi">
-        <a href="#certification">
-          <img src="ressources/qualiopi-logo.png" alt="Logo qualiopi" />
-        </a>
-        <p>La certification qualité a été délivrée au titre de la catégorie  « actions de formation »</p>
-      </div>
-      <div class="logo-sens-demain">
-        <img src="ressources/sens-demain.png" alt="Logo Donnons du sens à demain" />
-      </div>
-    </div>
-    
+    <button class="logo">
+      <img src="ressources/logo.png" alt="Logo ALMA Formation" />
+    </button>
+   
     <div class="navigation">
       <nav>
         <button
@@ -59,60 +29,87 @@
               <img src="ressources/hamburger.svg" alt="Ouvrir et fermer le menu" />
         </button>
         <ul class="nav-links">
-          <li class="nav-accueil"><a href="#accueil-mobile">Accueil</a></li>
-          <li><a href="#accueil">ALMA</a></li>
+          <li class="accueil"><a href="#accueil">Accueil</a></li>
+          <li><a href="#accueil-alma">A propos de <br>ALMA</a></li>
           <li><a href="#habilitation">Formations<br>NFC 18-510</a></li>
           <li><a href="#perfectionnement">Perfectionnement<br>Normes</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#apropos">A propos</a></li>
         </ul>
       </nav>
     </div>
+
+    <div class="hero" >
+
+      <div class="div-titre-principal">
+
+        <div class="choisir-alma">
+          <h3>Pourquoi choisir ALMA ?</h3>
+          <ul class="liste-choisir-alma">
+            <li>Organisme certifié Qualiopi</li>
+            <li>Pédagogie pratique et opérationnelle</li>  
+            <li>Expertise des formateurs expérimentés</li>  
+            <li>Formateurs expérimentés</li>  
+            <li>Supports conformes NFC 18-510</li>  
+            <li>Matériel et mises en situation réels</li>  
+            <li>Sessions rapides et efficaces</li>  
+            <li>Accompagnement OPCO</li>  
+            <li>100 % de nos apprenants évalués <span>(compatible Qualiopi)</span></li>  
+          </ul>
+        </div>
+
+          <h1 class="titre-principal">
+            ALMA FORMATION 
+          </h1>
+          <h2 class="sous-titre-principal">Spécialiste habilitation électrique <br>NFC 18-510</h2>
+
+          <div class="logo-sens-demain">
+            <img src="ressources/sens-demain.png">
+          </div>
+  
+      </div>
+
+      <div class="technicienne" >
+
+        <img  src="./ressources/technicienne.png" alt="Formation habilitation électrique NFC 18-510 technicien en intervention">
+      </div>
+      </div>
+    
   </header>
   <main class="container">
-    <section class="accueil section" id="accueil">
+    <section class="accueil-alma section" id="accueil-alma">
       <h2 class="section-title long-title">ALMA Formation <br> <span>Spécialiste habilitation électrique NFC 18-510</span></h2>
-      <div class="hero">
+      <div class="div-accueil-alma">
+        <div class="div-logos">
+          <div class="logo-qualiopi">
+            <a href="#certification">
+            <img src="ressources/qualiopi-logo.png" alt="Logo qualiopi" />
+            </a>
+            <p>La certification qualité a été délivrée au titre de la catégorie  « actions de formation »</p>
+          </div>
+        </div>
+
         <div class="presentation">
           <h3>Formations en Habilitations Électriques NFC 18-510</h3>
-          <h3>La maîtrise du risque électrique</h3>
-          <p>Organisme certifié <span>Qualiopi</span></p>
+          <p class="titre-point">🟠 Expertise sécurité depuis 2004</p>
+          <p class="point">Depuis plus de 20 ans, nous accompagnons les professionnels dans la prévention du risque électrique.</p>
+          <p class="titre-point">🟠 Formateurs confirmés</p>
+          <p class="point">Encadrés par notre formatrice référente, Hélène Zacharis, spécialiste NFC 18-510.</p>
+          <p class="titre-point">🟠 Partout en France</p>
+          <p class="point">Inter-entreprise à Paris & Marseille <br>Intra-entreprise : sur site, dans toute la France</p>
+         
+          
           <div class="hero-buttons">
-          <button class="decouvrir-btn" type="button">
-            <a href="#habilitation">Découvrir nos formations</a></button>
-          <button class="devis-btn" type="button"><a href="#contact">Demander un devis </a></button>
-         </div>
-        </div>
-        <div class="technicienne">
-          <img src="./ressources/hero-technicienne-bis.jpg" alt="Formation habilitation électrique NFC 18-510 technicien en intervention">
-        </div>
-      </div>
-      <div class="alma-3-en-1-container">
-        <div class="sliding-container">
-          <div class="text-slide">
-            <p class="titre-alma-3-en-1">➡️ <span>alma en 3 points</span></p>
-
+            <button class="decouvrir-btn" type="button">
+              <a href="#habilitation">FORMATIONS</a></button>
+              <button class="devis-btn" type="button"><a href="#contact">DEVIS </a></button>
+            </div>
           </div>
-          <div class="text-slide">
-            <p class="titre-point">🔒 Expertise sécurité depuis 2004</p>
-            <p class="point">Depuis plus de 20 ans, nous accompagnons les professionnels dans la prévention du risque électrique.</p>
-          </div>
-          <div class="text-slide">
-            <p class="titre-point">🎓 Formateurs confirmés</p>
-            <p class="point">Encadrés par notre formatrice référente, Hélène Zacharis, spécialiste NFC 18-510.</p>
-          </div>
-          <div class="text-slide">
-            <p class="titre-point">🌍 Partout en France</p>
-            <p class="point">Inter-entreprise à Paris & Marseille</p>
-            <p class="point">Intra-entreprise : sur site, dans toute la France</p>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="habilitation section" id="habilitation">
       <h2 class="section-title long-title">Formations NFC 18-510</h2>
-
+      <div class="div-habilitation">
       <div class="bloc-reglement">
             <h3 class="reglement">CONTEXTE <br>RÉGLEMENTAIRE</h3>
             <div class="contexte-reglementaire">
@@ -124,6 +121,7 @@
                 <p>Avant de délivrer l’habilitation, l’employeur s’assure que le travailleur a reçu la formation théorique et pratique qui lui confère la connaissance des risques liés à l’électricité et des mesures à prendre pour intervenir en sécurité lors de l’exécution des opérations qui lui sont confiées.<br><br>
                   En application de ce décret, la norme NFC 18-510 de janvier 2012 constitue le texte de référence définissant les différentes fonctions entrant dans la chaîne de réalisation des opérations électriques et les habilitations associées.</p>
             </div>
+            <button class="pour-qui">Quelle formation <br> pour qui?</button>
           </div>
       
       <div class="div-formations">
@@ -153,7 +151,7 @@
         </div>
         <p class="duree-variable">Les durées sont adaptées au besoin du client si nécessaire</p>
       </div>
-      
+      </div>
 
         <div class="temoignages-container">
           <div class="sliding-container">
@@ -170,7 +168,8 @@
               <p class="titre-point">⭐ « Un vrai plus pour la sécurité de nos équipes. »</p>
             </div>
           </div>
-        </div>
+        
+      </div>
     </section>
     <section class="certification section" id="certification">
       <h2 class="section-title long-title">Notre engagement qualité <span>(Qualiopi)</span></h2>
@@ -181,20 +180,26 @@
         <li>Une amélioration continue</li>
         <li>La possibilité d’un financement OPCO</li>
       </ul>
-      <button class="qualiopi-button" type="button">
-        <a href="#">En savoir plus sur Qualiopi</a></button>
-
-      <iframe src="./ressources/certificate_Qualiopi_2025.pdf" width="100%" height="550px"></iframe>
+      <div class="qualiopi-buttons">
+        <button class="qualiopi-button certificat" type="button">Certificat Qualiopi</button>
+        <button class="qualiopi-button" type="button">
+          <a href="#">En savoir plus sur Qualiopi</a></button>
+      </div>
     </section>
      
     <section class="perfectionnement section" id="perfectionnement">
       <h2 class="section-title long-title">Perfectionnement - Normes</h2>
     </section>
     <section class="contact section" id="contact">
-      <h2 class="section-title long-title">Contact et Réservation</h2>
-      <h3 class="section-subtitle">Formulaire de contact</h3>
-      <p class="remplissage">* : remplissage obligatoire</p>
-
+      <div class="logo-contact">
+        <p>Hélène ZACHARIS</p>
+        <p>+33(0)6 82 48 45 07</p>
+        <p>contact@alma-formation.com</p>
+      </div>
+      <h2 class="section-title long-title">Contact  et  Réservation</h2>
+      
+      <h3 class="section-subtitle">Formulaire de contact  <span>* : remplissage obligatoire</span></h3>
+      <p class="remplissage"></p>
       <form class="formulaire-contact">
         <div class="div-nom">
           <label for="nom">Votre nom* :</label> 
@@ -225,14 +230,12 @@
           <textarea class="message" rows="5" name="message" id="message"></textarea>
         </div>
         <div class="div-buttons">
-          <button class="btn submit-btn" type="submit">Envoyer</button>
           <button class="btn effacer-btn" type="reset">Effacer</button>
+          <button class="btn submit-btn" type="submit">Envoyer</button>
          </div>
       </form>
     </section>
-    <section class="apropos section" id="apropos">
-      <h2 class="section-title">A propos</h2>
-    </section>
+
 
   </main>
   <footer>
