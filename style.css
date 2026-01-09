@@ -255,6 +255,7 @@ body {
 .habilitation {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 .div-habilitation {
     display: flex;
@@ -352,7 +353,7 @@ body {
 /* Contexte réglementaire */
 .bloc-reglement {
     z-index: 100;
-    position: relative;
+    /* position: relative; */
 }
 .reglement {
     background: #f8cd85;
@@ -367,9 +368,11 @@ body {
 }
 .contexte-reglementaire {
     position: absolute;
-    top: -1rem; 
-    left: 12.5rem;
-    width: 46vw;
+    top: 13rem; 
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 50%;
+    width: 50%;
     height: auto;
     padding: 1.2rem;
     border-radius: 10px;
@@ -579,7 +582,9 @@ footer {
 
         }
         .contexte-reglementaire {
-            width: 60vw;
+            /* width: 80%; */
+            max-width: 55%;
+            width: 55%;
         }
         .certification {
             width: 80%;
@@ -612,10 +617,7 @@ footer {
             height: 5rem;
             transition: transform 0.3s ease;
         }
- 
-      .contexte-reglementaire {
-            width: 57vw;
-            }
+
     }
 
     @media (max-width: 725px) {
@@ -629,19 +631,30 @@ footer {
             }
         .nav-links {
             display: none;
+            padding: 0;
             flex-direction: column;
             align-items: start;
             background: #AEC9DA;
-            border-radius: 0.5rem;
+            border-radius: 0.75rem;
+            overflow: hidden;
             padding-top: 1rem;
         }
+        .nav-links li:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+        .nav-links li:last-child {
+            border-bottom: none;
+            }
         .nav-links a{
-            margin-bottom: 1rem;
             color: #111;
+            padding: 1rem;
             }
         .nav-links.active {
-            display: inline-block;
-            width: 100vw;
+            display: block;
+            position: fixed;
+            top: 5rem;
+            left: 0;
+            right: 0;
             }
         .nav-toggler {
             display: flex;
@@ -663,7 +676,7 @@ footer {
         }
 
         .section-title {
-            font-size: 2.5rem;
+            /* font-size: 2.5rem; */
             text-align: center;
             margin-bottom: 1rem;
             padding-top: 2rem;
@@ -674,7 +687,7 @@ footer {
         .logo {
             position: absolute;
             top: 1rem;
-            left: 1 rem;
+            left: 1rem;
             z-index: 100;
             }
 
@@ -683,9 +696,8 @@ footer {
             }
 
         .contexte-reglementaire {
-            width: 90vw;
-            top: 6rem;
-            left: 0.5rem;
+            max-width: 80%;
+            width: 80%;
             }
 
       .hero {
@@ -694,6 +706,9 @@ footer {
       .technicienne {
           order: 1;
           justify-content: center;
+        }
+      .technicienne img {
+            height: 40vh;
         }
 
       .presentation h3 {
@@ -713,7 +728,10 @@ footer {
         }
       .logo-qualiopi {
             max-width: 12rem;
-            }
+        }
+      .qualiopi-button {
+            min-width: 12rem;
+        }
       .div-habilitation {
             flex-direction: column;
         }
@@ -739,15 +757,14 @@ footer {
             gap: 0.5rem;
       }
       .voir-formation-btn {
-        align-self: center;
-        margin-top: 0.5rem;
-        max-width: 10rem;
+            /* align-self: center;
+            margin-top: 0.5rem; */
+            max-width: 10rem;
       }
 
       .temoignages-container {
             max-width: 90%;
-            margin-top: 1rem;
-            margin-left: 1rem;
+            margin: 1rem auto;
             }
       .voir-formation-btn {
             height: 3rem;
@@ -783,6 +800,32 @@ footer {
 
     }
     @media (max-width: 525px) {
-
-
+    .section-title {
+        font-size: 2rem;
+    }
+      .formulaire-contact {
+            padding: 0.5rem 0.5rem 1rem 0.5rem;
+        }
+      .logo-contact {
+            min-width: 14rem;
+            top: 5rem;
+            left: 50%;
+            transform: translate(-50%);
+        }
+      .contact .section-title {
+            text-align: center;
+        }
+      .contact .section-subtitle {
+            margin-top: 5rem;
+        }
+      .nav-toggler {
+            top: 0.75rem;
+            right: 0.75rem;
+        }
+      .decouvrir-btn, .devis-btn {
+            min-width: 10rem;
+        }
+      .qualiopi-buttons {
+            flex-direction: column;
+        }
 }
