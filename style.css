@@ -636,6 +636,9 @@ footer {
     order: -1;
     height: 60vh;
   }
+  .logo-sens-demain {
+  margin-top: 0;
+}
 }
 
 @media (max-width: 725px) {
