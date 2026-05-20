@@ -27,7 +27,7 @@ body {
   padding: 1.5rem 0;
   position: fixed;
   top: 0;
-  z-index: 200;
+  z-index: 50;
   background: #4d7b9c;
 }
 .nav-links {
@@ -125,6 +125,18 @@ body {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+.background-layer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 60;
+}
+.hidden {
+  display: none;
+}
 .choisir-alma {
   color: #f1f1f1;
   position: fixed;
@@ -144,6 +156,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 .logo-sens-demain {
   margin: 0 auto;
   margin-top: 2rem;
@@ -716,10 +729,10 @@ footer {
   }
 
   .contexte-reglementaire {
-    max-width: 80%;
+    max-width: 81%;
     width: 80%;
   }
-  
+
 
   .technicienne {
     height: 40vh;
