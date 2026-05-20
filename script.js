@@ -83,6 +83,7 @@ navLinksLI.forEach((li) => {
   li.addEventListener("click", fermerMenu);
 });
 function fermerMenu() {
+  const choisirAlma = document.querySelector(".choisir-alma");
   choisirAlma.classList.remove("active-logo");
   navLinks.classList.remove("active");
   togglerImg.src = "ressources/hamburger.svg";
