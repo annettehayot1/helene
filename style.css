@@ -52,6 +52,10 @@ body {
   color: #f8cd85;
   background-color: #5d94d4;
 }
+.nav-links a.active {
+  color: #f8cd85;
+  background-color: #5d94d4;
+}
 .nav-toggler {
   display: none;
 }

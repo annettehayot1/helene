@@ -43,7 +43,7 @@ function showFormation(e) {
   } else if (classe.includes("formation-btn-2")) {
     window.open("./ressources/prog-H12C-2025.pdf", "_blank");
   } else if (classe.includes("formation-btn-3")) {
-    window.open("./ressources/prog-RB12CR-2025.pdf", "_blank");
+    window.open("./ressources/prog H0B0 2022.pdf", "_blank");
   }
 }
 
@@ -107,3 +107,42 @@ function handleReglementClick() {
 }
 const backgroundLayer = document.querySelector(".background-layer");
 backgroundLayer.addEventListener("click", handleAlmaClick);
+
+const sections = document.querySelectorAll("section, header");
+const navAnchors = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", activeMenuOnScroll);
+
+// Active le menu dès le chargement
+activeMenuOnScroll();
+
+
+function activeMenuOnScroll() {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navAnchors.forEach((link) => {
+    link.classList.remove("active");
+
+    const href = link.getAttribute("href").replace("#", "");
+
+    // Formation NFC 18-510 reste actif aussi sur Certification
+    if (
+      href === currentSection ||
+      (currentSection === "certification" && href === "habilitation")
+    ) {
+      link.classList.add("active");
+    }
+  });
+}
