@@ -23,12 +23,7 @@ body {
   margin: 0 auto;
 }
 .navigation {
-  width: 100%;
   padding: 1.5rem 0;
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  background: #4d7b9c;
 }
 .nav-links {
   display: flex;
@@ -45,7 +40,9 @@ body {
   font-weight: 600;
   padding: 0.4rem 0.75rem;
   border-radius: 7px;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   text-align: center;
 }
 .nav-links a:hover {
@@ -63,7 +60,14 @@ body {
   display: none;
 }
 #accueil {
-  scroll-margin-top: 6rem;
+  background: #4d7b9c;
+  z-index: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .hero {
@@ -71,7 +75,7 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: calc(100vh - 6rem);
-  margin-top: 6rem;
+  padding-top: 6rem;
 }
 .div-titre-principal {
   display: flex;
@@ -109,14 +113,11 @@ body {
   object-position: 35% top;
 }
 .logo {
-  position: fixed;
-  top: 0.5rem;
-  left: 1.5rem;
-  z-index: 300;
-  border-radius: 7px;
+ border-radius: 7px;
   border: none;
   cursor: pointer;
   margin: 0 auto;
+  margin-left: 0.5rem;
 }
 
 .logo img {
@@ -128,6 +129,12 @@ body {
 .logo:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+.phone-btn {
+  color: #f1f1f1;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
 }
 .background-layer {
   position: fixed;
@@ -587,13 +594,14 @@ footer {
 }
 @media (max-width: 1100px) {
   .nav-links {
-    padding-right: 5%;
-    justify-content: end;
+    /* padding-right: 5%;
+    justify-content: end; */
   }
   .nav-links a {
     margin: 0 0.3rem;
     padding: 0.4rem 0.5rem;
   }
+
   .div-accueil-alma,
   .habilitation {
     width: 100%;
@@ -624,7 +632,7 @@ footer {
     font-size: 1.6rem;
   }
   .nav-links {
-    justify-content: end;
+    /* justify-content: end; */
   }
   .nav-links a {
     padding: 0.4rem 0.5rem;
@@ -643,20 +651,23 @@ footer {
   }
   .technicienne,
   .div-titre-principal {
-    width: 100%;
+    width: 100vw;
   }
   .technicienne {
     order: -1;
     height: 60vh;
   }
   .logo-sens-demain {
-  margin-top: 0;
-}
+    margin-top: 0;
+  }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .container {
     padding: 0.2rem;
+  }
+  #accueil {
+    padding:0.5rem;
   }
   .navigation {
     display: flex;
@@ -666,7 +677,7 @@ footer {
   .nav-links {
     display: none;
     padding: 0;
-    flex-direction: column;
+    flex-direction: column;  
     align-items: start;
     background: #aec9da;
     border-radius: 0.75rem;
@@ -692,13 +703,10 @@ footer {
   }
   .nav-toggler {
     display: flex;
-    position: fixed;
-    top: 1.5rem;
-    right: 1rem;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.2rem;
+    margin-right: 0.5rem;
   }
   .nav-toggler img {
     width: 2rem;
@@ -717,12 +725,6 @@ footer {
   .long-title span {
     font-size: 1.5rem;
   }
-  .logo {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    z-index: 100;
-  }
 
   .logo-contact :last-child {
     font-size: 0.9rem;
@@ -732,7 +734,6 @@ footer {
     max-width: 81%;
     width: 80%;
   }
-
 
   .technicienne {
     height: 40vh;
@@ -795,6 +796,9 @@ footer {
   }
   .voir-formation-btn {
     height: 3rem;
+  }
+  .hero {
+    padding-top: 1.5rem;
   }
   .hero-buttons {
     margin-top: 4rem;

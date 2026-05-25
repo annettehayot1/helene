@@ -19,14 +19,38 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <header id="accueil">
-      <button class="logo">
-        <img src="ressources/logo.png" alt="Logo ALMA Formation" />
-      </button>
+      <div>
+        <button class="logo">
+          <img src="ressources/logo.png" alt="Logo ALMA Formation" />
+        </button>
+        <div class="choisir-alma">
+          <h3>Pourquoi choisir ALMA ?</h3>
+          <ul class="liste-choisir-alma">
+            <li>Organisme certifié Qualiopi</li>
+            <li>Pédagogie pratique et opérationnelle</li>
+            <li>Expertise des formateurs expérimentés</li>
+            <li>Formateurs expérimentés</li>
+            <li>Supports conformes NFC 18-510</li>
+            <li>Matériel et mises en situation réels</li>
+            <li>Sessions rapides et efficaces</li>
+            <li>Accompagnement OPCO</li>
+            <li>
+              100 % de nos apprenants évalués
+              <span>(compatible Qualiopi)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div class="navigation">
+        <div class="background-layer hidden"></div>
         <nav>
           <button
             aria-controls="menu-principal"
@@ -39,7 +63,7 @@
             />
           </button>
           <ul class="nav-links">
-            <li class="accueil"><a href="#accueil">Accueil</a></li>
+            <li class="accueil"><a href="#hero">Accueil</a></li>
             <li>
               <a href="#accueil-alma">A propos de <br />ALMA</a>
             </li>
@@ -53,27 +77,14 @@
           </ul>
         </nav>
       </div>
-
-      <div class="hero">
+      <a href="tel:+33612345678" class="phone-btn">
+        <i class="fa-solid fa-phone"></i>
+        06 82 48 45 07
+      </a>
+    </header>
+    <main class="container">
+      <section class="hero" id="hero">
         <div class="div-titre-principal">
-          <div class="choisir-alma">
-            <h3>Pourquoi choisir ALMA ?</h3>
-            <ul class="liste-choisir-alma">
-              <li>Organisme certifié Qualiopi</li>
-              <li>Pédagogie pratique et opérationnelle</li>
-              <li>Expertise des formateurs expérimentés</li>
-              <li>Formateurs expérimentés</li>
-              <li>Supports conformes NFC 18-510</li>
-              <li>Matériel et mises en situation réels</li>
-              <li>Sessions rapides et efficaces</li>
-              <li>Accompagnement OPCO</li>
-              <li>
-                100 % de nos apprenants évalués
-                <span>(compatible Qualiopi)</span>
-              </li>
-            </ul>
-          </div>
-          <div class="background-layer hidden"></div>
           <h1 class="titre-principal">ALMA FORMATION</h1>
           <h2 class="sous-titre-principal">
             Spécialiste habilitation électrique <br />NFC 18-510
@@ -90,9 +101,7 @@
             alt="Formation habilitation électrique NFC 18-510 technicien en intervention"
           />
         </div>
-      </div>
-    </header>
-    <main class="container">
+      </section>
       <section class="accueil-alma section" id="accueil-alma">
         <h2 class="section-title long-title">
           ALMA Formation <br />
@@ -180,9 +189,7 @@
           <div class="div-formations">
             <div class="formation">
               <div class="formation-pe">
-                <h3 class="titre-formation">
-                  🔧 Habilitations Basse Tension 
-                </h3>
+                <h3 class="titre-formation">🔧 Habilitations Basse Tension</h3>
                 <p class="nom-formation">
                   B1 – B1V – B2 – B2V – BR – BS – BE Manoeuvre – BE essais – BE
                   Mesure – BE vérification
