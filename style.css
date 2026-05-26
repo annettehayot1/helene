@@ -72,11 +72,13 @@ body {
 section {
   padding: 8rem 1rem 0 1rem;
 }
+
 .hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: calc(100vh - 6rem);
+  padding: 6rem 0 0;
 }
 .div-titre-principal {
   display: flex;
@@ -152,8 +154,8 @@ section {
 .choisir-alma {
   color: #f1f1f1;
   position: fixed;
-  top: 7rem;
-  left: 1.5rem;
+  top: 7.5rem;
+  left: 1rem;
   visibility: hidden;
   opacity: 0;
   z-index: 300;
@@ -591,10 +593,7 @@ footer {
   }
 }
 @media (max-width: 1100px) {
-  .nav-links {
-    /* padding-right: 5%;
-    justify-content: end; */
-  }
+
   .nav-links a {
     margin: 0 0.3rem;
     padding: 0.4rem 0.5rem;
@@ -670,6 +669,10 @@ footer {
   #accueil {
     padding:0.5rem;
   }
+  .choisir-alma {
+  top: 6.5rem;
+  left: 0.5rem;
+}
   .navigation {
     display: flex;
     order: 1;
@@ -698,7 +701,7 @@ footer {
   .nav-links.active {
     display: block;
     position: fixed;
-    top: 5rem;
+    top: 6.25rem;
     left: 0;
     right: 0;
   }
